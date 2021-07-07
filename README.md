@@ -1,7 +1,7 @@
 # image-lambda
 
 Link to my Images.json
-[https://console.aws.amazon.com/s3/object/cts-images-for-all?region=us-west-2&prefix=images.json](https://console.aws.amazon.com/s3/object/cts-images-for-all?region=us-west-2&prefix=images.json)
+[https://cts-images-for-all.s3.us-west-2.amazonaws.com/images.json](https://cts-images-for-all.s3.us-west-2.amazonaws.com/images.json)
 
 ## Note
 
