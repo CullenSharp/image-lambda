@@ -50,6 +50,6 @@ The solution is decouple input and output locations or configure your event noti
 
 ## ‼️ Notes
 
-July 10th, 2021: 🎉 I DID IT! By configuring the event to only fire when objects with the prefix "images/" are seen I prevented a recursive loop.
+July 10th, 2021: 🎉  I DID IT! By configuring the event to only fire when objects with the prefix "images/" are seen I prevented a recursive loop.
 
 July 6th, 2021: I wasn't able to complete the lab. I got to the point of creating the JSON file and adding to it, but wasn't able to implement it properly.
