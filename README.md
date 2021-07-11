@@ -2,12 +2,45 @@
 
 Revised: July 10th, 2021
 
-## 👀 Overview 
+## 🚀 Getting Started
 
-A basic introduction to AWS [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) and [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html), this lab is will create a Lambda that listens to all S3 create events. Whenever an image is uploaded, request a manifest called "images.json" and update it with metadata from the upload. After the operation is complete, the same Lambda reinserts the manifest into the bucket. 
+1. Create a new AWS S3 bucket and upload `images.json`:
+
+```JSON
+{
+  "images": []
+}
+```
+
+2. Add a `/images` folder to the bucket.
+
+1. Clone this repo and install dependencies
+
+```
+npm i
+```
+
+4. Create a new AWS Lambda to handle all ObjectCreateEvents to the bucket.
+
+1. Give it permission to access S3
+
+1. Compress source code and build artifacts
+
+1. Upload to as source code for AWS your Lambda
+
+1. Configure Lambda to listen to ObjectCreateEvents from your S3
+    1. ‼️ To avoid a recursive loop add "/images" as a prefix
+
+1. 🎉 Start uploading images to your bucket
+
+## 👀 Overview
+
+A basic introduction to AWS [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) and [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html), this lab is will create a Lambda that listens to all S3 create events. Whenever an image is uploaded, request a manifest called "images.json" and update it with metadata from the upload. After the operation is complete, the same Lambda reinserts the manifest into the bucket.
 
 Link to my Images.json
 [https://cts-images-for-all.s3.us-west-2.amazonaws.com/images.json](https://cts-images-for-all.s3.us-west-2.amazonaws.com/images.json)
+
+![UML](./assets/UML.png)
 
 ## ⚠️ Warning
 
