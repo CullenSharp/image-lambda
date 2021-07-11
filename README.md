@@ -29,7 +29,7 @@ npm i
 1. Upload to as source code for AWS your Lambda
 
 1. Configure Lambda to listen to ObjectCreateEvents from your S3
-    1. ‼️ To avoid a recursive loop add "/images" as a prefix
+    1. ‼️ `To avoid a recursive loop add "/images" as a prefix`
 
 1. 🎉 Start uploading images to your bucket
 
@@ -51,4 +51,5 @@ The solution is decouple input and output locations or configure your event noti
 ## ‼️ Notes
 
 July 10th, 2021: 🎉 I DID IT! By configuring the event to only fire when objects with the prefix "images/" are seen I prevented a recursive loop.
+
 July 6th, 2021: I wasn't able to complete the lab. I got to the point of creating the JSON file and adding to it, but wasn't able to implement it properly.
